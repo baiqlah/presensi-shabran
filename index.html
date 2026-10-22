@@ -39,7 +39,7 @@
           <i class="fa-solid fa-mosque fa-xl"></i>
         </div>
         <div>
-          <h1 class="text-xl font-bold tracking-wide text-white">Dashboard Presensi Mahasantri 2026 | ver 1.0</h1>
+          <h1 class="text-xl font-bold tracking-wide text-white">Dashboard Presensi Mahasantri 2026/2027 | ver 1.0</h1>
           <p class="text-xs text-slate-200">Pondok Hajjah Nuriyah Shabran - UMS</p>
         </div>
       </div>
@@ -92,7 +92,7 @@
     <!-- Grafik Distribusi Mahasantri per Angkatan & Gender -->
     <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
       <h2 class="text-base font-bold text-ums-navy mb-4 flex items-center gap-2">
-        <i class="fa-solid fa-chart-simple text-amber-500"></i> Distribusi Mahasantri per Angkatan
+        <i class="fa-solid fa-chart-simple text-amber-500"></i> Mahasantri per Angkatan
       </h2>
       <div class="h-64">
         <canvas id="angkatanChart"></canvas>
@@ -126,7 +126,7 @@
             <h3 id="top-card-title" class="text-sm font-bold text-teal-800 flex items-center gap-2">
               <i class="fa-solid fa-award text-teal-600 text-base"></i> 10 Terbaik
             </h3>
-            <span id="top-card-badge" class="text-[10px] bg-teal-100 text-teal-700 font-semibold px-2 py-0.5 rounded-full"><i>Alhamdulillaah..</i></span>
+            <span id="top-card-badge" class="text-[12px] bg-teal-100 text-teal-700 font-semibold px-2 py-0.5 rounded-full"><i>Alhamdulillaah..</i></span>
           </div>
           <div class="divide-y divide-slate-100 text-xs" id="top-ranking-list">
             <div class="p-4 text-center text-slate-400">Memuat data...</div>
@@ -139,7 +139,7 @@
             <h3 id="bottom-card-title" class="text-sm font-bold text-rose-800 flex items-center gap-2">
               <i class="fa-solid fa-triangle-exclamation text-rose-500 text-base"></i> 10 Terendah
             </h3>
-            <span id="bottom-card-badge" class="text-[10px] bg-rose-100 text-rose-700 font-semibold px-2 py-0.5 rounded-full"><i>Innaalillaah..</i></span>
+            <span id="bottom-card-badge" class="text-[12px] bg-rose-100 text-rose-700 font-semibold px-2 py-0.5 rounded-full"><i>Innaalillaah..</i></span>
           </div>
           <div class="divide-y divide-slate-100 text-xs" id="bottom-ranking-list">
             <div class="p-4 text-center text-slate-400">Memuat data...</div>
@@ -330,11 +330,11 @@
       if (category === 'SUBUH_PUTRA') {
         getValueFn = getSubuh;
         
-        topTitle.innerHTML = `<i class="fa-solid fa-award text-teal-600 text-base"></i> 10 Terbaik Subuh (Putra Non-2026)`;
+        topTitle.innerHTML = `<i class="fa-solid fa-award text-teal-600 text-base"></i> 10 Teraktif Subuh (Putra S1)`;
         topBadge.className = 'text-[10px] bg-teal-100 text-teal-700 font-semibold px-2 py-0.5 rounded-full';
         topHeader.className = 'p-4 border-b border-slate-100 bg-teal-50/50 flex justify-between items-center';
 
-        bottomTitle.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-rose-500 text-base"></i> 10 Terendah Subuh (Putra Non-2026)`;
+        bottomTitle.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-rose-500 text-base"></i> 10 Terendah Subuh (Putra S1)`;
         bottomBadge.className = 'text-[10px] bg-rose-100 text-rose-700 font-semibold px-2 py-0.5 rounded-full';
         bottomHeader.className = 'p-4 border-b border-slate-100 bg-rose-50/50 flex justify-between items-center';
 
@@ -351,11 +351,11 @@
       } else if (category === 'TOTAL_PUTRA') {
         getValueFn = getTotal;
 
-        topTitle.innerHTML = `<i class="fa-solid fa-circle-check text-sky-600 text-base"></i> 10 Paling Rajin (Putra Non-2026)`;
+        topTitle.innerHTML = `<i class="fa-solid fa-circle-check text-sky-600 text-base"></i> 10 Paling Rajin (Putra S1)`;
         topBadge.className = 'text-[10px] bg-sky-100 text-sky-700 font-semibold px-2 py-0.5 rounded-full';
         topHeader.className = 'p-4 border-b border-slate-100 bg-sky-50/50 flex justify-between items-center';
 
-        bottomTitle.innerHTML = `<i class="fa-solid fa-circle-exclamation text-amber-600 text-base"></i> 10 Paling Malas (Putra Non-2026)`;
+        bottomTitle.innerHTML = `<i class="fa-solid fa-circle-exclamation text-amber-600 text-base"></i> 10 Paling MALAS (Putra S1)`;
         bottomBadge.className = 'text-[10px] bg-amber-100 text-amber-700 font-semibold px-2 py-0.5 rounded-full';
         bottomHeader.className = 'p-4 border-b border-slate-100 bg-amber-50/50 flex justify-between items-center';
 
@@ -372,11 +372,11 @@
       } else if (category === 'TOTAL_PUTRI') {
         getValueFn = getTotal;
 
-        topTitle.innerHTML = `<i class="fa-solid fa-circle-check text-pink-600 text-base"></i> 10 Paling Rajin (Putri Non-2026)`;
+        topTitle.innerHTML = `<i class="fa-solid fa-circle-check text-pink-600 text-base"></i> 10 Paling Rajin (Putri S1)`;
         topBadge.className = 'text-[10px] bg-pink-100 text-pink-700 font-semibold px-2 py-0.5 rounded-full';
         topHeader.className = 'p-4 border-b border-slate-100 bg-pink-50/50 flex justify-between items-center';
 
-        bottomTitle.innerHTML = `<i class="fa-solid fa-circle-exclamation text-rose-600 text-base"></i> 10 Paling Malas (Putri Non-2026)`;
+        bottomTitle.innerHTML = `<i class="fa-solid fa-circle-exclamation text-rose-600 text-base"></i> 10 Paling MALAS (Putri S1)`;
         bottomBadge.className = 'text-[10px] bg-rose-100 text-rose-700 font-semibold px-2 py-0.5 rounded-full';
         bottomHeader.className = 'p-4 border-b border-slate-100 bg-rose-50/50 flex justify-between items-center';
 
@@ -464,7 +464,7 @@
       tbody.innerHTML = '';
 
       if (data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="100%" class="px-4 py-4 text-center text-slate-400">Tidak ada data ditemukan</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="100%" class="px-4 py-4 text-center text-slate-400">Data tidak ditemukan</td></tr>`;
         return;
       }
 
