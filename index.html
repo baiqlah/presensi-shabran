@@ -45,7 +45,7 @@
       </div>
       <div class="flex items-center gap-3">
         <div class="text-right hidden sm:block">
-          <span class="text-[10px] text-slate-300 block"><i class="fa-solid fa-ban text-rose-400 mr-1"></i>Auto-Sync: Non-aktif</span>
+         <!-- <span class="text-[10px] text-slate-300 block"><i class="fa-solid fa-ban text-rose-400 mr-1"></i>Auto-Sync: Non-aktif</span> -->
           <span id="last-update" class="text-xs text-slate-100 bg-ums-dark/60 px-3 py-1 rounded-full border border-white/10 inline-block mt-0.5">
             <i class="fa-solid fa-spinner fa-spin mr-1 text-ums-yellow"></i> Memuat data...
           </span>
@@ -92,7 +92,7 @@
     <!-- Grafik Distribusi Mahasantri per Angkatan & Gender -->
     <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
       <h2 class="text-base font-bold text-ums-navy mb-4 flex items-center gap-2">
-        <i class="fa-solid fa-chart-simple text-amber-500"></i> Distribusi Mahasantri per Angkatan & Program
+        <i class="fa-solid fa-chart-simple text-amber-500"></i> Distribusi Mahasantri per Angkatan
       </h2>
       <div class="h-64">
         <canvas id="angkatanChart"></canvas>
@@ -103,7 +103,7 @@
     <div class="space-y-3">
       <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
         <i class="fa-solid fa-clipboard-check text-ums-navy text-lg"></i>
-        <h2 class="text-base font-bold text-ums-navy">Evaluasi Subuh Jamaah (Khusus Putra Senior / Non-2026)</h2>
+        <h2 class="text-base font-bold text-ums-navy">Evaluasi Subuh Jamaah (Khusus Putra S1)</h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -111,9 +111,9 @@
         <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           <div class="p-4 border-b border-slate-100 bg-teal-50/50 flex justify-between items-center">
             <h3 class="text-sm font-bold text-teal-800 flex items-center gap-2">
-              <i class="fa-solid fa-award text-teal-600 text-base"></i> 10 Terbaik Subuh (Putra Non-2026)
+              <i class="fa-solid fa-award text-teal-600 text-base"></i> 10 Terbaik Subuh (Putra S1)
             </h3>
-            <span class="text-[10px] bg-teal-100 text-teal-700 font-semibold px-2 py-0.5 rounded-full">Top Performer</span>
+            <span class="text-[10px] bg-teal-100 text-teal-700 font-semibold px-2 py-0.5 rounded-full">Paling Rajin</span>
           </div>
           <div class="divide-y divide-slate-100 text-xs" id="top-10-subuh-putra">
             <div class="p-4 text-center text-slate-400">Memuat data...</div>
@@ -140,7 +140,7 @@
       <div class="flex items-center justify-between border-b border-slate-200 pb-2">
         <div class="flex items-center gap-2">
           <i class="fa-solid fa-mars text-sky-600 text-lg"></i>
-          <h2 class="text-base font-bold text-ums-navy">Peringkat Presensi Putra (Khusus Non-2026)</h2>
+          <h2 class="text-base font-bold text-ums-navy">Peringkat Presensi Putra S1</h2>
         </div>
         <span class="text-xs font-semibold text-sky-700 bg-sky-50 border border-sky-200 px-2.5 py-0.5 rounded-full">Akumulasi Semua Kegiatan</span>
       </div>
@@ -179,7 +179,7 @@
       <div class="flex items-center justify-between border-b border-slate-200 pb-2">
         <div class="flex items-center gap-2">
           <i class="fa-solid fa-venus text-pink-600 text-lg"></i>
-          <h2 class="text-base font-bold text-ums-navy">Peringkat Presensi Putri (Khusus Non-2026)</h2>
+          <h2 class="text-base font-bold text-ums-navy">Peringkat Presensi Putri S1</h2>
         </div>
         <span class="text-xs font-semibold text-pink-700 bg-pink-50 border border-pink-200 px-2.5 py-0.5 rounded-full">Akumulasi Semua Kegiatan</span>
       </div>
